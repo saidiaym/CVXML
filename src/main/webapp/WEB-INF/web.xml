@@ -19,6 +19,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CXFServlet</servlet-name>
-        <url-pattern>Rest/*</url-pattern>
+        <url-pattern>/Rest/*</url-pattern>
     </servlet-mapping>
 </web-app>
