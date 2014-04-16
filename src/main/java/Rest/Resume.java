@@ -1,5 +1,7 @@
 package Rest;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -8,80 +10,66 @@ import java.util.Map;
 /**
  * Created by saidiaym on 08/04/14.
  */
+@XmlRootElement
 public class Resume {
 
     private  String name;
     private String nom;
     private String Prenom;
-
-    private String  objectifs;
-    private String Interets;
-    Map<Integer,String> Experiences;
-    Map<Integer,String> CompetencesProf;
-    Map<Integer,String> Loisirs;
-    Map<Integer,String> Langues;
-
-
+    public ResumeLangue langue;
 
     public Resume(String Prenom,String Nom,String Name) {
 
         this.nom = Nom;
         this.Prenom = Prenom;
         this.name = Name;
-        CompetencesProf = new HashMap<Integer, String>();
-        Experiences = new HashMap<Integer, String>();
-        Loisirs =  new HashMap<Integer, String>();
-        Langues = new HashMap<Integer, String>();
+        this.langue = new ResumeLangue();
 
+        langue.addLangue("Anglais", "Moyen");
+        langue.addLangue("Français", "Bon niveau");
+        langue.addLangue("Chinois", "Bas");
+        langue.addLangue("Espagnol", "Bas");
 
     }
     public Resume(){
 
     }
-    public  String  getName(){
 
+    @XmlElement
+    public  String  getName(){
         return name;
     }
 
+    public void setName(String n) {
+        this.name = n;
+    }
+
+    @XmlElement
     public String getNom(){
 
-        return Prenom;
+        return nom;
     }
+
+    public void setNom(String n) {
+        this.nom = n;
+    }
+
+    @XmlElement
     public String getPrenom() {
         return Prenom;
     }
-    public  String  getInterets(){
 
-        return Interets;
+    public void setPrenom (String p) {
+        this.Prenom = p;
     }
 
-    public String getObjectif(){
-
-        return objectifs;
+    @XmlElement
+    public ResumeLangue getLangues(){
+        return this.langue;
     }
 
-
-
-    public void setObjectifs(String Objectifs){
-
-        this.objectifs = Objectifs;
-    }
-    public Map getCompetencesProf(){
-
-            return this.CompetencesProf;
-    }
-    public Map Langues(){
-
-        return this.Langues;
+    public void setLangues(ResumeLangue rl) {
+        this.langue = rl;
     }
 
-    public Map getExperiences(){
-
-            return this.Experiences;
-    }
-
-    public Map getLoisirs(){
-
-        return this.Loisirs;
-    }
 }
