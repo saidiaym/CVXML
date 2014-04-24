@@ -45,8 +45,12 @@ public class Resume {
 
 
         Lois.addLoisir("Sport", "ssss");
-        Lois.addLoisir("NATATION","DDD"); 
-        resumeExperiences.addExperience("stage dans la societé agoris","6 mois");
+        Lois.addLoisir("NATATION","DDD");
+        Lois.addLoisir("la pech","d");
+
+        resumeExperiences.addExperience("stage dans la societé Tunisie Telecom","6 mois");
+        resumeExperiences.addExperience("stage dans la societé agoris","2 mois");
+        resumeExperiences.addExperience("stage dans la societé SICEM","4 mois");
     }
     public Resume(){
 
