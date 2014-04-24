@@ -27,11 +27,15 @@ public class Resume {
         this.nom = Nom;
         this.Prenom = Prenom;
         this.name = Name;
-        this.langue = new ResumeLangue();
         this.Lois = new Loisirs();
         this.Competences = new ResumeCompetences();
         this.resumeExperiences = new Experiences();
+        this.langue = new ResumeLangue();
 
+
+
+        Competences.addCompetences("php","niveau bien");
+        Competences.addCompetences("java","haut niveau");
 
 
         langue.addLangue("Anglais", "Moyen");
@@ -39,9 +43,10 @@ public class Resume {
         langue.addLangue("Chinois", "Bas");
         langue.addLangue("Espagnol", "Bas");
 
-        Competences.addCompetences("php","max");
 
-        Lois.addLoisir("string","ssss");
+        Lois.addLoisir("Sport", "ssss");
+        Lois.addLoisir("NATATION","DDD"); 
+        resumeExperiences.addExperience("stage dans la societé agoris","6 mois");
     }
     public Resume(){
 
