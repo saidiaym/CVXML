@@ -17,12 +17,12 @@ public class Experiences {
         Experiences= new HashMap<String, String>();
     }
 
-    public void addCompetences(String lang, String niveau) {
-     Experiences.put(lang, niveau);
+    public void addExperience(String lang, String niveau) {
+        Experiences.put(lang, niveau);
     }
 
     @XmlElement
-    public List<String> getCompetences(){
+    public List<String> getExperience(){
         List<String> tmp = new LinkedList<String>();
         for (String str : Experiences.keySet())
             tmp.add(str + ": " + Experiences.get(str));

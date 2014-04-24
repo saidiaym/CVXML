@@ -9,13 +9,13 @@ import java.util.Map;
 /**
  * Created by saidiaym on 15/04/14.
  */
-public class Competences {
+public class ResumeCompetences {
 
     Map<String,String> Competences;
 
-    public Competences() {
+    public ResumeCompetences() {
 
-       Competences= new HashMap<String, String>();
+        Competences= new HashMap<String, String>();
     }
 
     public void addCompetences(String lang, String niveau) {
@@ -30,3 +30,4 @@ public class Competences {
         return tmp;
     }
 }
+

@@ -11,22 +11,18 @@ import java.util.Map;
  */
 public class Loisirs {
 
-    Map<String,String> Loisirs;
+    List<String> mesloisirs;
 
     public Loisirs() {
-
-        Loisirs= new HashMap<String, String>();
+        this.mesloisirs = new LinkedList<String>();
     }
 
-    public void addLoisirs(String lang, String niveau) {
-       Loisirs.put(lang, niveau);
+    public void addLoisir(String lang, String niveau) {
+        this.mesloisirs.add(lang + ": " + niveau);
     }
 
     @XmlElement
-    public List<String> getLoisirs(){
-        List<String> tmp = new LinkedList<String>();
-        for (String str : Loisirs.keySet())
-            tmp.add(str + ": " + Loisirs.get(str));
-        return tmp;
+    public  List<String> getLoisir(){
+        return this.mesloisirs;
     }
 }

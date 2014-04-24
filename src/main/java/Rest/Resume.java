@@ -10,6 +10,7 @@ import java.util.Map;
 /**
  * Created by saidiaym on 08/04/14.
  */
+
 @XmlRootElement
 public class Resume {
 
@@ -17,6 +18,9 @@ public class Resume {
     private String nom;
     private String Prenom;
     public ResumeLangue langue;
+    public ResumeCompetences Competences;
+    public Loisirs Lois;
+    public Experiences resumeExperiences;
 
     public Resume(String Prenom,String Nom,String Name) {
 
@@ -24,12 +28,20 @@ public class Resume {
         this.Prenom = Prenom;
         this.name = Name;
         this.langue = new ResumeLangue();
+        this.Lois = new Loisirs();
+        this.Competences = new ResumeCompetences();
+        this.resumeExperiences = new Experiences();
+
+
 
         langue.addLangue("Anglais", "Moyen");
         langue.addLangue("Français", "Bon niveau");
         langue.addLangue("Chinois", "Bas");
         langue.addLangue("Espagnol", "Bas");
 
+        Competences.addCompetences("php","max");
+
+        Lois.addLoisir("string","ssss");
     }
     public Resume(){
 
@@ -62,7 +74,7 @@ public class Resume {
     public void setPrenom (String p) {
         this.Prenom = p;
     }
-
+/*
     @XmlElement
     public ResumeLangue getLangues(){
         return this.langue;
@@ -71,5 +83,5 @@ public class Resume {
     public void setLangues(ResumeLangue rl) {
         this.langue = rl;
     }
-
+*/
 }
