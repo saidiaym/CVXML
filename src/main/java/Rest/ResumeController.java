@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by saidiaym on 08/04/14.
  */
@@ -19,20 +16,21 @@ import java.util.Map;
 @RequestMapping("/Resume")
 public class ResumeController {
 
-    public ListCV listCV;
+    public ResumeList resumeList;
     public Resume resume, resume1;
     public ResumeLangue la;
-    public Loisirs lo;
+    public ResumeLoisirs lo;
     public ResumeCompetences Co;
-    public Experiences E;
-
+    public ResumeExperiences E;
+    public ResumeAdresse addr;
     @Autowired
     public void setResume(){
 
         la = new ResumeLangue();
         Co = new ResumeCompetences();
-        lo = new Loisirs();
-        E = new Experiences();
+        lo = new ResumeLoisirs();
+        E = new ResumeExperiences();
+        addr = new ResumeAdresse();
 
         la.addLangue("Anglais", "Moyen");
         la.addLangue("Français", "Bon niveau");
@@ -48,56 +46,58 @@ public class ResumeController {
         Co.addCompetences("java", "excellent");
         Co.addCompetences("xml", "intermediaire");
 
-
-        resume = new Resume ("ILYES","NSAMAIL" ,"CV",la,lo,E,Co);
-        resume1= new Resume("XAVIER", "LAROCHE","CV",la,lo,E,Co);
-        listCV = new ListCV();
-
-        listCV.CVS.add(resume);
-        listCV.CVS.add(resume1);
-
-    }
-    @RequestMapping( method = RequestMethod.GET ,params = "list")
-    public @ResponseBody
-    ListCV getListInXML() {
+        addr.addResumeAdresse("numero :125 Rue Monnet , Ville :Rouen");
 
 
+        resume = new Resume ("cvil","ILYES","NSAMAIL" ,"CV",addr,la,lo,E,Co);
+        resume1= new Resume("cvxav","XAVIER", "LAROCHE","CV",addr,la,lo,E,Co);
+        resumeList = new ResumeList();
 
-        return listCV;
-
+        resumeList.CVS.add(resume);
+        resumeList.CVS.add(resume1);
 
     }
-    @RequestMapping(value="{name}", method = RequestMethod.GET)
+    @RequestMapping(value="/all", method = RequestMethod.GET )
     public @ResponseBody
-    Resume getCVInXML(@PathVariable String name) {
-        //Iterator iterator=listCV.resumeList.iterator();
-        Resume resume2;
-        for (int i=0;i<listCV.CVS.size();i++)
+    ResumeList getListInXML() {
+
+
+
+        return resumeList;
+
+
+    }
+    @RequestMapping(value="{identifiant}", method = RequestMethod.GET)
+    public @ResponseBody
+    Resume getResumeWithID(@PathVariable String identifiant) {
+
+
+        for (int i=0;i< resumeList.CVS.size();i++)
         {
-            //resume2 =listCV.resumeList.get(i);
-            if(listCV.CVS.get(i).getNom().equals(name)){
 
-                return listCV.CVS.get(i);
+            if(resumeList.CVS.get(i).getIdentifiant().equals(identifiant)){
+
+                return resumeList.CVS.get(i);
             }
         }
-        // resume2 =listCV.resumeList.get(1);
+
         return  null;
 
 
 
 
     }
-
+/*
     @RequestMapping(value="{name}/{nom}/{prenom}", method = RequestMethod.GET)
     public @ResponseBody
-    ListCV putCVInXML(@PathVariable String name, @PathVariable String nom, @PathVariable String prenom) {
+    ResumeList putCVInXML(@PathVariable String name, @PathVariable String nom, @PathVariable String prenom) {
 
 
         Resume resume3= new Resume(nom,prenom,name,la,lo,E,Co);
-        listCV.CVS.add(resume3);
-        return listCV;
+        resumeList.CVS.add(resume3);
+        return resumeList;
 
 
     }
-
+*/
 }

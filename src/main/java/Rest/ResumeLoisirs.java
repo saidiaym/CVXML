@@ -9,11 +9,11 @@ import java.util.Map;
 /**
  * Created by saidiaym on 15/04/14.
  */
-public class Loisirs {
+public class ResumeLoisirs {
 
     List<String> mesloisirs;
 
-    public Loisirs() {
+    public ResumeLoisirs() {
         this.mesloisirs = new LinkedList<String>();
     }
 

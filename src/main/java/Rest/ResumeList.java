@@ -11,7 +11,7 @@ import java.util.List;
  * Created by saidiaym on 25/04/14.
  */
 @XmlRootElement
-public class ListCV {
+public class ResumeList {
 
     List<Resume> CVS =  new LinkedList<Resume>();
 

@@ -2,10 +2,6 @@ package Rest;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by saidiaym on 08/04/14.
@@ -13,28 +9,30 @@ import java.util.Map;
 
 @XmlRootElement
 public class Resume {
-
-    private  String name;
+    public String Identifiant;
+    private  String mail;
     private String nom;
     private String Prenom;
     public ResumeLangue langue;
     public ResumeCompetences Competences;
-    public Loisirs Lois;
-    public Experiences resumeExperiences;
+    public ResumeLoisirs Lois;
+    public ResumeExperiences resumeResumeExperiences;
+    public ResumeAdresse resumeAdresse;
 
-    public Resume(String Prenom,String Nom,String Name,ResumeLangue Langue ,Loisirs lois,Experiences Experiences,ResumeCompetences competences) {
-
+    public Resume(String Identifiant, String Prenom,String Nom,String mail, ResumeAdresse resumeAdresse,ResumeLangue Langue , ResumeLoisirs lois, ResumeExperiences ResumeExperiences,ResumeCompetences competences) {
+        this.Identifiant = Identifiant;
         this.nom = Nom;
         this.Prenom = Prenom;
-        this.name = Name;
-        //this.Lois = new Loisirs();
+        this.mail = mail;
+        //this.Lois = new ResumeLoisirs();
        /* this.Competences = new ResumeCompetences();
-        this.resumeExperiences = new Experiences();
+        this.resumeResumeExperiences = new ResumeExperiences();
         this.langue = new ResumeLangue();*/
         this.langue = Langue;
         this.Lois = lois;
-        this.resumeExperiences = Experiences;
+        this.resumeResumeExperiences = ResumeExperiences;
         this.Competences = competences;
+        this.resumeAdresse = resumeAdresse;
 
 
 
@@ -52,21 +50,21 @@ public class Resume {
         Lois.addLoisir("NATATION","DDD");
         Lois.addLoisir("la pech","d");
 
-        resumeExperiences.addExperience("stage dans la societé Tunisie Telecom","6 mois");
-        resumeExperiences.addExperience("stage dans la societé agoris","2 mois");
-        resumeExperiences.addExperience("stage dans la societé SICEM","4 mois");*/
+        resumeResumeExperiences.addExperience("stage dans la societé Tunisie Telecom","6 mois");
+        resumeResumeExperiences.addExperience("stage dans la societé agoris","2 mois");
+        resumeResumeExperiences.addExperience("stage dans la societé SICEM","4 mois");*/
     }
     public Resume(){
 
     }
 
     @XmlElement
-    public  String  getName(){
-        return name;
+    public  String  getMail(){
+        return mail;
     }
 
-    public void setName(String n) {
-        this.name = n;
+    public void setMail(String n) {
+        this.mail = n;
     }
 
     @XmlElement
@@ -87,14 +85,14 @@ public class Resume {
     public void setPrenom (String p) {
         this.Prenom = p;
     }
-/*
+
     @XmlElement
-    public ResumeLangue getLangues(){
-        return this.langue;
+    public String getIdentifiant() {
+        return Identifiant;
     }
 
-    public void setLangues(ResumeLangue rl) {
-        this.langue = rl;
+    public void setIdentifiant (String identifiant) {
+        this.Identifiant = identifiant;
     }
-*/
+
 }

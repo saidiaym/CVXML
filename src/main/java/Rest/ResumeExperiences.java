@@ -9,10 +9,10 @@ import java.util.Map;
 /**
  * Created by saidiaym on 15/04/14.
  */
-public class Experiences {
+public class ResumeExperiences {
     Map<String,String> Experiences;
 
-    public Experiences() {
+    public ResumeExperiences() {
 
         Experiences= new HashMap<String, String>();
     }
