@@ -17,8 +17,8 @@ public class ResumeLoisirs {
         this.mesloisirs = new LinkedList<String>();
     }
 
-    public void addLoisir(String lang, String niveau) {
-        this.mesloisirs.add(lang + ": " + niveau);
+    public void addLoisir(String loi) {
+        this.mesloisirs.add(loi );
     }
 
     @XmlElement

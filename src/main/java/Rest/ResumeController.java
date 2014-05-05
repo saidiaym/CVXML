@@ -37,8 +37,8 @@ public class ResumeController {
         la.addLangue("Chinois", "Bas");
         la.addLangue("Espagnol", "Bas");
 
-        lo.addLoisir("nage", "excellent");
-        lo.addLoisir("football", "moyen");
+        lo.addLoisir("nage");
+
 
         E.addExperience("Stage", "moyen");
         E.addExperience("projet", "intermediaire");
@@ -87,17 +87,36 @@ public class ResumeController {
 
 
     }
-/*
-    @RequestMapping(value="{name}/{nom}/{prenom}", method = RequestMethod.GET)
+
+    @RequestMapping(value="{identifiant}/{nom}/{prenom}/{mail}/adresse/{ad}/competences/{c1}/{nc1}/{c2}/{nc2}" +
+            "/experiences/{e1}/{ne1}/{e2}/{ne2}/langues/{l1}/{nl1}/{l2}/{nl2}" +
+            "/loisirs/{lo1}", method = RequestMethod.GET)
     public @ResponseBody
-    ResumeList putCVInXML(@PathVariable String name, @PathVariable String nom, @PathVariable String prenom) {
+    ResumeList putCVInXML(@PathVariable String identifiant, @PathVariable String nom, @PathVariable String prenom, @PathVariable String mail,@PathVariable String ad,
+                          @PathVariable String c1, @PathVariable String nc1, @PathVariable String c2, @PathVariable String nc2,
+                          @PathVariable String e1, @PathVariable String ne1, @PathVariable String e2, @PathVariable String ne2,
+                          @PathVariable String l1, @PathVariable String nl1, @PathVariable String l2, @PathVariable String nl2,
+                          @PathVariable String lo1) {
 
+        ResumeCompetences Rcomp = new ResumeCompetences();
+        ResumeExperiences Rexp = new ResumeExperiences();
+        ResumeLangue Rlangue = new ResumeLangue();
+        ResumeLoisirs Rloisirs = new ResumeLoisirs();
+        ResumeAdresse Radresse = new ResumeAdresse();
+        Radresse.addResumeAdresse(ad);
+        Rcomp.addCompetences(c1,nc1);
+        Rcomp.addCompetences(c2,nc2);
+        Rexp.addExperience(e1, ne1);
+        Rexp.addExperience(e2,ne2);
+        Rlangue.addLangue(l1, nl1);
+        Rlangue.addLangue(l2,nl2);
+        Rloisirs.addLoisir(lo1);
 
-        Resume resume3= new Resume(nom,prenom,name,la,lo,E,Co);
-        resumeList.CVS.add(resume3);
+        Resume cv= new Resume(identifiant,nom,prenom,mail,Radresse, Rlangue,Rloisirs,Rexp,Rcomp);
+        resumeList.CVS.add(cv);
         return resumeList;
 
 
     }
-*/
+
 }

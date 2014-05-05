@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a03e5889-2f10-4517-aaf5-fd80c84aaf5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeAdresse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Rest/Experiences.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeExperiences.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Rest/ListCV.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Rest/Loisirs.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rest/Resume.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/Resume.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rest/ResumeController.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java" afterPath="$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java" />
     </list>
     <ignored path="XMLProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,10 +84,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Resume.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Resume.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Rest/Resume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="26" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.5784543" vertical-offset="908" max-vertical-offset="1335">
+            <state line="90" column="26" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1335">
               <folding>
                 <element signature="e#2031#2032#0" expanded="true" />
                 <element signature="e#2058#2059#0" expanded="true" />
@@ -121,13 +116,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResumeController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ResumeController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="36" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1560">
+            <state line="95" column="116" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.10538641" vertical-offset="1305" max-vertical-offset="1845">
               <folding>
-                <element signature="e#1864#1865#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
+                <element signature="e#1809#1810#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,7 +142,7 @@
       <file leaf-file-name="ResumeLoisirs.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="239" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="20" column="34" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
               <folding />
             </state>
           </provider>
@@ -176,8 +171,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Rest/ResumeLangue.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rest/ListCV.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rest/ResumeAdresse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Rest/ResumeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rest/Resume.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Rest/ResumeController.java" />
       </list>
     </option>
   </component>
@@ -592,7 +588,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3825397" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -724,8 +720,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="40" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="735">
           <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -788,8 +784,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="735">
           <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -857,8 +853,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="735">
           <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,8 +922,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="63" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="735">
           <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1017,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="239" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeAdresse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="34" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -1033,24 +1022,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeLoisirs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="36" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1560">
-          <folding>
-            <element signature="e#1864#1865#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-          </folding>
+        <state line="20" column="34" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Rest/Resume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="26" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.5784543" vertical-offset="908" max-vertical-offset="1335">
+        <state line="90" column="26" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.0" vertical-offset="974" max-vertical-offset="1335">
           <folding>
             <element signature="e#2031#2032#0" expanded="true" />
             <element signature="e#2058#2059#0" expanded="true" />
             <element signature="e#2552#2553#0" expanded="true" />
             <element signature="e#2598#2599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Rest/ResumeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="116" selection-start="2812" selection-end="2812" vertical-scroll-proportion="0.10538641" vertical-offset="1305" max-vertical-offset="1845">
+          <folding>
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
           </folding>
         </state>
       </provider>
