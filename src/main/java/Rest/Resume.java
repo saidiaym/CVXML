@@ -22,23 +22,27 @@ public class Resume {
     public Loisirs Lois;
     public Experiences resumeExperiences;
 
-    public Resume(String Prenom,String Nom,String Name) {
+    public Resume(String Prenom,String Nom,String Name,ResumeLangue Langue ,Loisirs lois,Experiences Experiences,ResumeCompetences competences) {
 
         this.nom = Nom;
         this.Prenom = Prenom;
         this.name = Name;
-        this.Lois = new Loisirs();
-        this.Competences = new ResumeCompetences();
+        //this.Lois = new Loisirs();
+       /* this.Competences = new ResumeCompetences();
         this.resumeExperiences = new Experiences();
-        this.langue = new ResumeLangue();
+        this.langue = new ResumeLangue();*/
+        this.langue = Langue;
+        this.Lois = lois;
+        this.resumeExperiences = Experiences;
+        this.Competences = competences;
 
 
 
-        Competences.addCompetences("php","niveau bien");
-        Competences.addCompetences("java","haut niveau");
+       /* Competences.addCompetences("php","niveau bien");
+        Competences.addCompetences("java","haut niveau");*/
 
 
-        langue.addLangue("Anglais", "Moyen");
+        /*langue.addLangue("Anglais", "Moyen");
         langue.addLangue("Français", "Bon niveau");
         langue.addLangue("Chinois", "Bas");
         langue.addLangue("Espagnol", "Bas");
@@ -50,7 +54,7 @@ public class Resume {
 
         resumeExperiences.addExperience("stage dans la societé Tunisie Telecom","6 mois");
         resumeExperiences.addExperience("stage dans la societé agoris","2 mois");
-        resumeExperiences.addExperience("stage dans la societé SICEM","4 mois");
+        resumeExperiences.addExperience("stage dans la societé SICEM","4 mois");*/
     }
     public Resume(){
 
