@@ -92,7 +92,7 @@ public class ResumeController {
             "/experiences/{e1}/{ne1}/{e2}/{ne2}/langues/{l1}/{nl1}/{l2}/{nl2}" +
             "/loisirs/{lo1}", method = RequestMethod.GET)
     public @ResponseBody
-    ResumeList putCVInXML(@PathVariable String identifiant, @PathVariable String nom, @PathVariable String prenom, @PathVariable String mail,@PathVariable String ad,
+    ResumeList  putCVInXML(@PathVariable String identifiant, @PathVariable String nom, @PathVariable String prenom, @PathVariable String mail,@PathVariable String ad,
                           @PathVariable String c1, @PathVariable String nc1, @PathVariable String c2, @PathVariable String nc2,
                           @PathVariable String e1, @PathVariable String ne1, @PathVariable String e2, @PathVariable String ne2,
                           @PathVariable String l1, @PathVariable String nl1, @PathVariable String l2, @PathVariable String nl2,

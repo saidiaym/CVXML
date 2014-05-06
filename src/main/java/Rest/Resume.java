@@ -36,23 +36,6 @@ public class Resume {
 
 
 
-       /* Competences.addCompetences("php","niveau bien");
-        Competences.addCompetences("java","haut niveau");*/
-
-
-        /*langue.addLangue("Anglais", "Moyen");
-        langue.addLangue("Français", "Bon niveau");
-        langue.addLangue("Chinois", "Bas");
-        langue.addLangue("Espagnol", "Bas");
-
-
-        Lois.addLoisir("Sport", "ssss");
-        Lois.addLoisir("NATATION","DDD");
-        Lois.addLoisir("la pech","d");
-
-        resumeResumeExperiences.addExperience("stage dans la societé Tunisie Telecom","6 mois");
-        resumeResumeExperiences.addExperience("stage dans la societé agoris","2 mois");
-        resumeResumeExperiences.addExperience("stage dans la societé SICEM","4 mois");*/
     }
     public Resume(){
 

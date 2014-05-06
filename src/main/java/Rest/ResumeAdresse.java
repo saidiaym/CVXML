@@ -19,7 +19,7 @@ public class ResumeAdresse {
     }
 
     @XmlElement
-    public  List<String> getLoisir(){
+    public  List<String> getAdresse(){
         return this.adresse;
     }
 }

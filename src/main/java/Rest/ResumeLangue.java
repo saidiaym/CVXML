@@ -20,7 +20,7 @@ public class ResumeLangue {
     }
 
     @XmlElement
-    public  List<String> getLangue(){
+    public  List<String> getLangues(){
         return this.lang;
     }
 
