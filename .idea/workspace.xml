@@ -592,7 +592,11 @@
       <created>1399386727188</created>
       <updated>1399386727188</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="finition de serveur&#10;">
+      <created>1399386797467</created>
+      <updated>1399386797469</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -668,7 +672,8 @@
     <MESSAGE value=" AJOUT DES LOISIRS&#10;ajout de list de cv" />
     <MESSAGE value=" AJOUT DES LOISIRS&#10;ajout de list de cv&#10;mise a jour&#10;" />
     <MESSAGE value="finition de serveur" />
-    <option name="LAST_COMMIT_MESSAGE" value="finition de serveur" />
+    <MESSAGE value="finition de serveur&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="finition de serveur&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
