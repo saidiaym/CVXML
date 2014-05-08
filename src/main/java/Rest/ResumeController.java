@@ -85,7 +85,15 @@ public class ResumeController {
     @RequestMapping(method = RequestMethod.PUT)
     @ResponseBody
     public String putcv(@RequestBody Resume resume){
+        String id = resume.getIdentifiant();
+        for (int i=0;i< resumeList.CVS.size();i++)
+        {
 
+            if(resumeList.CVS.get(i).getIdentifiant().equals(id)){
+
+                return "Ce cv existe deja";
+            }
+        }
       resumeList.CVS.add(resume);
         return "CV ajouter au serveur";
     }
